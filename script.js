@@ -30,7 +30,7 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
     const password = document.getElementById("password").value;
 
     // Carica database dipendenti
-    const response = await fetch("employees.json");
+    const response = await fetch("Employees.json");
     const employees = await response.json();
 
     if (employees[username] && employees[username].password === password) {
